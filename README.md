@@ -7,14 +7,14 @@ features of multiple Linux utilities such as head, tail, cat, and cp.
 
 1. The first step is that the following application has to be compiled: ```gcc -o fileutil 30806151_fileutil.c```
 2. The following app provides: 
-## VIEWING FUNCTIONALITY:
+### VIEWING FUNCTIONALITY:
 - In order to print to the terminal the first 10 lines of the "sample.txt" file, run the program with no arguments: 
   ```./fileutil ```
 - In order to print to the terminal the first 10 lines of any other file, provide the name of the file with the absolut path:
 	```./fileutil /home/student/dir/example.txt ```
 - If the file to be viewed does not exist at the current/specified directory it will give an error
 
-## COPYING FUNCTIONALITY:
+### COPYING FUNCTIONALITY:
 - In order to copy first 10 lines of the file to another file in the certain directory, run the program with -d, specifying the directory RIGHT AFTER:
 ```./fileutil -d /home/student/dir ``` __(important that there is no '/'at the end)__
 
@@ -24,7 +24,7 @@ features of multiple Linux utilities such as head, tail, cat, and cp.
 - The copying functionality may be used with specifying the file to copy FROM as well: <br />
 ```./fileutil /home/student/dir/example.txt -d /home/student/dir2``` (if the file is not specified, the "sample.txt" will be copied)
 
-## MORE (the following functionalities are available for both copying and viewing):
+### MORE (the following functionalities are available for both copying and viewing):
 - To specify the number of lines to be copied/viewed, run the program with -n, specifying the number of lines RIGHT AFTER: <br />
 		  ```./fileutil -n 3 ( prints to the terminal first 3 lines of "sample.txt")```<br />
 		  ```./fileutil /home/student/dir/example.txt -n 6 -d /home/student/dir2``` (copies the first 6 lines from example.txt to the 
